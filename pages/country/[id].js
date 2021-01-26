@@ -28,13 +28,13 @@ const country = ({ country }) => {
             <div className={styles.panel__desc__Container}>
               <div className={styles.pop__container}>
                 <div className={styles.desc__value}>
-                  {population.toLocaleString()}
+                  {population}
                 </div>
                 <div className={styles.desc__lable}>Population</div>
               </div>
               <div className={styles.area}>
                 <div className={styles.desc__value}>
-                  {area.toLocaleString()}
+                  {area}
                 </div>
                 <div className={styles.desc__lable}>Area (km)</div>
               </div>

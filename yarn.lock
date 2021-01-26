@@ -6065,9 +6065,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"world@workspace:.":
+"world-rank@workspace:.":
   version: 0.0.0-use.local
-  resolution: "world@workspace:."
+  resolution: "world-rank@workspace:."
   dependencies:
     "@material-ui/core": ^4.11.3
     "@material-ui/icons": ^4.11.2
