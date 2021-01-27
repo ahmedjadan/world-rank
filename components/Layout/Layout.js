@@ -33,7 +33,7 @@ function Layout({ children, title = "World Rank" }) {
       </Head>
       <header className={styles.header}>
         <Link href="/">
-          <img src="/Logo.svg" alt="logo" width="100" height="100" />
+          <img src="/Logo.svg" alt="logo" width="200" height="60" />
         </Link>
         <button
           name="change theme color"
