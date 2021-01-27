@@ -21,21 +21,19 @@ const country = ({ country }) => {
       <div className={styles.container} key={country.name}>
         <div className={styles.container__left}>
           <div className={styles.panel__container}>
-            <img src={flag} alt={country.name} />
+            <img src={flag} alt={country.name} weidth="200" height="200" />
             <h1 className={styles.panel__name}>{name}</h1>
             <div className={styles.panel__region}>{region}</div>
 
             <div className={styles.panel__desc__Container}>
               <div className={styles.pop__container}>
                 <div className={styles.desc__value}>
-                  {population}
+                  {population.toLocaleString()}
                 </div>
                 <div className={styles.desc__lable}>Population</div>
               </div>
               <div className={styles.area}>
-                <div className={styles.desc__value}>
-                  {area}
-                </div>
+                <div className={styles.desc__value}>{area.toLocaleString()}</div>
                 <div className={styles.desc__lable}>Area (km)</div>
               </div>
             </div>

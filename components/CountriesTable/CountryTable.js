@@ -28,6 +28,7 @@ const CountryTable = ({ countries }) => {
     <div>
       <div className={styles.heading}>
         <button
+          name="name"
           className={styles.heading_name}
           onClick={() => setValueAndDirection("name")}
         >
@@ -35,6 +36,7 @@ const CountryTable = ({ countries }) => {
           {value === "name" && <SortArrow direction={direction} />}
         </button>
         <button
+          name="population"
           className={styles.heading_population}
           onClick={() => setValueAndDirection("population")}
         >
@@ -42,6 +44,7 @@ const CountryTable = ({ countries }) => {
           {value === "population" && <SortArrow direction={direction} />}
         </button>
         <button
+          name="area"
           className={styles.heading_area}
           onClick={() => setValueAndDirection("area")}
         >
@@ -51,6 +54,7 @@ const CountryTable = ({ countries }) => {
           {value === "area" && <SortArrow direction={direction} />}
         </button>
         <button
+          name="gini"
           className={styles.heading_gini}
           onClick={() => setValueAndDirection("gini")}
         >
