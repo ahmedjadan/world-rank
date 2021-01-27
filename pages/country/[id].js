@@ -33,7 +33,7 @@ const country = ({ country }) => {
                 <div className={styles.desc__lable}>Population</div>
               </div>
               <div className={styles.area}>
-                <div className={styles.desc__value}>{area.toLocaleString()}</div>
+                <div className={styles.desc__value}>{area}</div>
                 <div className={styles.desc__lable}>Area (km)</div>
               </div>
             </div>
