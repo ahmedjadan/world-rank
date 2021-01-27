@@ -30,15 +30,17 @@ function Layout({ children, title = "World Rank" }) {
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="world Rank countries" />
-        <meta name="keywords" content="ranks, population, areas, Gini record" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <header className={styles.header}>
         <Link href="/">
           <img src="/Logo.svg" alt="logo" />
         </Link>
-        <button name="change theme color" className={styles.theme__switcher} onClick={switchTheme}>
+        <button
+          name="change theme color"
+          aria-label="theme switcher"
+          className={styles.theme__switcher}
+          onClick={switchTheme}
+        >
           <Brightness6Rounded />
         </button>
       </header>
